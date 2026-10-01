@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Motors | Luxury Car Dealership</title>
+    
+    <!-- Google Fonts for Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVIGATION BAR
+         ========================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-mark">AURA</span>
+                <span class="logo-sub">MOTORS</span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#models" class="nav-link">Models</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#test-drive" class="nav-link btn-nav"><i class="fa-solid fa-calendar-check"></i> Book Test Drive</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge"><i class="fa-solid fa-crown"></i> Premier Luxury Dealership</span>
+            <h1>Drive Perfection.<br><span class="text-gradient">Redefine Luxury.</span></h1>
+            <p>Explore our flagship selection of handcrafted luxury SUVs and high-performance sedans tailored for those who accept nothing less than extraordinary.</p>
+            <div class="hero-actions">
+                <a href="#models" class="btn btn-primary"><i class="fa-solid fa-car-side"></i> Explore Models</a>
+                <a href="#test-drive" class="btn btn-secondary"><i class="fa-solid fa-key"></i> Book Test Drive</a>
+            </div>
+        </div>
+        
+        <!-- Hero Quick Stats -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-num">04</span>
+                <span class="stat-label">Flagship Models</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Certified Pre-Checked</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num">24/7</span>
+                <span class="stat-label">VIP Concierge</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         MODELS SHOWROOM SECTION
+         ========================================== -->
+    <section class="section models-section" id="models">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-gem"></i> Exclusive Inventory</span>
+                <h2>Our Luxury Models</h2>
+                <p>Select a vehicle to inspect full specs or submit a test drive reservation.</p>
+            </div>
+
+            <!-- Vehicle Grid Cards -->
+            <div class="models-grid">
+                
+                <!-- Model 1: Lexus LX 570 -->
+                <div class="car-card" data-car="lexus">
+                    <div class="card-badge">In Stock</div>
+                    <div class="card-image-box">
+                <img src="lexus lx570.png" alt="Lexus LX 570">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3>Lexus LX 570</h3>
+                            <span class="price">$93,250</span>
+                        </div>
+                        <p class="subtitle">5.7L V8 Luxury Flagship SUV</p>
+                        
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 383 HP</span>
+                            <span><i class="fa-solid fa-gears"></i> 8-Speed Auto</span>
+                            <span><i class="fa-solid fa-stopwatch"></i> 0-60: 7.3s</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <button class="btn btn-card-primary open-spec-modal" data-car-id="lexus">
+                                <i class="fa-solid fa-sliders"></i> Full Specs
+                            </button>
+                            <a href="#test-drive" class="btn btn-card-secondary select-test-drive" data-car-name="Lexus LX 570">
+                                <i class="fa-solid fa-calendar"></i> Book
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 2: BMW Alpina B7 -->
+                <div class="car-card" data-car="alpina">
+                    <div class="card-badge">New Arrival</div>
+                    <div class="card-image-box">
+                        <img src="BMW ALPINA.png" alt="BMW Alpina B7">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3>BMW Alpina B7</h3>
+                            <span class="price">$143,200</span>
+                        </div>
+                        <p class="subtitle">4.4L Bi-Turbo V8 Performance Sedan</p>
+                        
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 600 HP</span>
+                            <span><i class="fa-solid fa-gears"></i> AWD Sport</span>
+                            <span><i class="fa-solid fa-stopwatch"></i> 0-60: 3.5s</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <button class="btn btn-card-primary open-spec-modal" data-car-id="alpina">
+                                <i class="fa-solid fa-sliders"></i> Full Specs
+                            </button>
+                            <a href="#test-drive" class="btn btn-card-secondary select-test-drive" data-car-name="BMW Alpina B7">
+                                <i class="fa-solid fa-calendar"></i> Book
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 3: Range Rover Sport -->
+                <div class="car-card" data-car="rangerover">
+                    <div class="card-badge">Popular</div>
+                    <div class="card-image-box">
+                        <img src="Range Image.jpg" alt="Range Rover Sport">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3>Range Rover Sport</h3>
+                            <span class="price">$104,800</span>
+                        </div>
+                        <p class="subtitle">3.0L Turbocharged I6 Dynamic SUV</p>
+                        
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 395 HP</span>
+                            <span><i class="fa-solid fa-gears"></i> Terrain Response</span>
+                            <span><i class="fa-solid fa-stopwatch"></i> 0-60: 5.4s</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <button class="btn btn-card-primary open-spec-modal" data-car-id="rangerover">
+                                <i class="fa-solid fa-sliders"></i> Full Specs
+                            </button>
+                            <a href="#test-drive" class="btn btn-card-secondary select-test-drive" data-car-name="Range Rover Sport">
+                                <i class="fa-solid fa-calendar"></i> Book
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 4: Porsche Cayenne Turbo GT -->
+                <div class="car-card" data-car="porsche">
+                    <div class="card-badge">2026 Model</div>
+                    <div class="card-image-box">
+                        <img src="porsche.jpg" alt="Porsche Cayenne GT">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header-row">
+                            <h3>Porsche Cayenne GT</h3>
+                            <span class="price">$196,300</span>
+                        </div>
+                        <p class="subtitle">4.0L Twin-Turbo V8 Super SUV</p>
+                        
+                        <div class="specs-mini">
+                            <span><i class="fa-solid fa-gauge-high"></i> 650 HP</span>
+                            <span><i class="fa-solid fa-gears"></i> 8-Speed PDK</span>
+                            <span><i class="fa-solid fa-stopwatch"></i> 0-60: 3.1s</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <button class="btn btn-card-primary open-spec-modal" data-car-id="porsche">
+                                <i class="fa-solid fa-sliders"></i> Full Specs
+                            </button>
+                            <a href="#test-drive" class="btn btn-card-secondary select-test-drive" data-car-name="Porsche Cayenne GT">
+                                <i class="fa-solid fa-calendar"></i> Book
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURES / WHY CHOOSE US SECTION
+         ========================================== -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> The Luxury Experience</span>
+                <h2>Why Choose AURA Motors</h2>
+                <p>We redefine luxury car buying with bespoke services tailored specifically to your needs.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                    <h3>White-Glove Delivery</h3>
+                    <p>Enclosed private transport delivering your new vehicle directly to your doorstep anywhere nationwide.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Bespoke Warranty</h3>
+                    <p>Comprehensive extended warranty packages with complimentary loaner vehicles during maintenance visits.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-coins"></i></div>
+                    <h3>Tailored Financing</h3>
+                    <p>Customized luxury lease arrangements and flexible low-interest financing through premier private banks.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24/7 VIP Assistance</h3>
+                    <p>Dedicated personal concierge contact for technical inquiries, service scheduling, and emergency roadside help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BOOK TEST DRIVE SECTION
+         ========================================== -->
+    <section class="section test-drive-section" id="test-drive">
+        <div class="container">
+            <div class="test-drive-wrapper">
+                <div class="test-drive-info">
+                    <span class="section-tag"><i class="fa-solid fa-road"></i> Experience the Power</span>
+                    <h2>Book a Private Test Drive</h2>
+                    <p>Feel the refinement firsthand. Schedule an exclusive private test drive with our Senior Luxury Consultant at your preferred time.</p>
+                    
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Private 45-minute driving route</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Personalized spec walk-through</li>
+                        <li><i class="fa-solid fa-circle-check"></i> No commitment required</li>
+                    </ul>
+                </div>
+
+                <div class="test-drive-form-box">
+                    <form id="testDriveForm" class="form">
+                        <div class="form-group">
+                            <label for="carSelect"><i class="fa-solid fa-car"></i> Select Model</label>
+                            <select id="carSelect" required>
+                                <option value="" disabled selected>Select a luxury vehicle...</option>
+                                <option value="Lexus LX 570">Lexus LX 570 ($93,250)</option>
+                                <option value="BMW Alpina B7">BMW Alpina B7 ($143,200)</option>
+                                <option value="Range Rover Sport">Range Rover Sport ($104,800)</option>
+                                <option value="Porsche Cayenne GT">Porsche Cayenne GT ($196,300)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName"><i class="fa-solid fa-user"></i> Full Name</label>
+                                <input type="text" id="fullName" placeholder="e.g. Halima Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredDate"><i class="fa-solid fa-calendar-days"></i> Preferred Date</label>
+                            <input type="date" id="preferredDate" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Confirm Reservation
+                        </button>
+                    </form>
+                    
+                    <!-- Confirmation Alert Box -->
+                    <div id="formSuccess" class="form-success hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>Reservation Confirmed!</h3>
+                        <p>Thank you. Our luxury concierge will call you within 2 hours to confirm your private appointment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-mark">AURA</span>
+                    <span class="logo-sub">MOTORS</span>
+                </a>
+                <p>Providing unrivaled luxury automotive engineering and premium client experiences.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#models">Models</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#test-drive">Book Test Drive</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Our Showroom</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 AURA Motors Dealership. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         VEHICLE SPECIFICATIONS MODAL
+         ========================================== -->
+    <div class="modal" id="specModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div class="modal-header">
+                <span class="modal-tag" id="modalTag">FLAGSHIP</span>
+                <h3 id="modalTitle">Car Title</h3>
+                <p id="modalSubtitle">Subtext detail</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modalImg" src="" alt="Vehicle Specification">
+                </div>
+                
+                <div class="modal-specs-list">
+                    <h4>Technical Specifications</h4>
+                    <ul id="modalSpecsContainer">
+                        <!-- Dynamic content injected by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#test-drive" class="btn btn-primary btn-block" id="modalBookBtn">
+                    <i class="fa-solid fa-calendar"></i> Book Test Drive for this Car
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
